@@ -1,0 +1,19 @@
+/* 
+     ______ __                 __        
+    |      |  |.-----.--.--.--|  |.--.--.
+    |   ---|  ||  _  |  |  |  _  ||  |  |
+    |______|__||_____|_____|_____||___  |
+    Version 1.0 - By SkyX [ID FR] |_____|©
+    2022-2023
+
+*/
+
+/* 📌 Fonts Import with Google Fonts : 📌 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #000;
+    font-size: normal;
+    font-weight: normal;
+}
