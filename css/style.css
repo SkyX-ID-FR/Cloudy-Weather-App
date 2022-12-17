@@ -25,9 +25,7 @@ html body .content_page p {
 html header {
     width: 100%;
     height: 90px;
-
-    /* Coming soon background : */
-    box-shadow: 0px 0px 20px rgb(210, 210, 210);
+    box-shadow: 0px 0px 30px rgb(227, 227, 227);
 }
 
 html header .app_logo {
@@ -35,6 +33,27 @@ html header .app_logo {
     float: left;
     margin-left: 20px;
     margin-top: 15px;
+}
+
+html header .app_logo:hover ~ .logo_info {
+	opacity: 1;
+    transition: opacity 0.4s ease-out; 
+    -webkit-transition: opacity 0.4s ease-out;  
+    -moz-transition: opacity 0.4s ease-in-out;   
+}
+
+html header .logo_info {
+    box-shadow: 0px 0px 15px rgb(198, 198, 198);
+    background-color: white;
+    position: absolute;
+    margin-top: 80px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 30px;
+    z-index: 50;
+    font-weight: 300;
+    opacity: 0;
+    transition: all 0.5s;
 }
 
 html header .github-button {
