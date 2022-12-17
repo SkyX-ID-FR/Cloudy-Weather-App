@@ -18,27 +18,27 @@ html {
 }
 
 /* 📜 Header's style : 📜 */
-html header {
+html #header {
     width: 100%;
     height: 90px;
     /* box-shadow: 0px 0px 30px rgb(227, 227, 227); */
 }
 
-html header .app_logo {
+html #header .app_logo {
     width: 55px;
     float: left;
     margin-left: 20px;
     margin-top: 15px;
 }
 
-html header .app_logo:hover ~ .logo_info {
+html #header .app_logo:hover ~ .logo_info {
 	opacity: 1;
     transition: opacity 0.4s ease-out; 
     -webkit-transition: opacity 0.4s ease-out;  
     -moz-transition: opacity 0.4s ease-in-out;   
 }
 
-html header .logo_info {
+html #header .logo_info {
     box-shadow: 0px 0px 15px rgb(198, 198, 198);
     background-color: white;
     position: absolute;
@@ -54,7 +54,7 @@ html header .logo_info {
     width: 300px;
 }
 
-html header .github-button {
+html #header .github-button {
     width: 180px;
     background: #0E7EEC;
     padding: 5px;
@@ -66,20 +66,20 @@ html header .github-button {
     margin-right: 20px;
 }
 
-html header .github-button:hover, .app_logo:hover {
+html #header .github-button:hover, .app_logo:hover {
     transition: all 0.3s;
     transform: scale(1.1);
     cursor: pointer;
 }
 
-html header .github-button p {
+html #header .github-button p {
     float: left;
     margin-left: 20px;
     margin-top: 4px;
     font-size: 15px;
 }
 
-html header .github-button .github_logo {
+html #header .github-button .github_logo {
     width: 27px;
     float: right;
     margin-right: 20px;

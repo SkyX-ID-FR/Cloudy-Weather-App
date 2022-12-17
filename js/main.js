@@ -9,6 +9,11 @@
 */
 "use strict";
 
+/* Todo : create a loading's wait function : */
+document.getElementById("loader").style.display = "none";
+document.getElementById("header").style.display = "block";
+document.getElementById("hero_components").style.display = "block";
+
 /* 👉 Indicate console.log starting'app : */
 console.clear();
 console.log("%c  Cloudy© is starting ! ✨  ", "border-radius: 10px; padding-top: 3px; padding-bottom: 6px; color: white; font-size: 14px; background-color: green");
