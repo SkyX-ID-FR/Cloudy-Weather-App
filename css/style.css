@@ -17,15 +17,11 @@ html {
     font-weight: normal;
 }
 
-html body .content_page p {
-    margin: 30px;
-}
-
 /* 📜 Header's style : 📜 */
 html header {
     width: 100%;
     height: 90px;
-    box-shadow: 0px 0px 30px rgb(227, 227, 227);
+    /* box-shadow: 0px 0px 30px rgb(227, 227, 227); */
 }
 
 html header .app_logo {
@@ -51,9 +47,11 @@ html header .logo_info {
     border-radius: 10px;
     margin-left: 30px;
     z-index: 50;
-    font-weight: 300;
+    font-weight: 200;
     opacity: 0;
     transition: all 0.5s;
+    color: black;
+    width: 300px;
 }
 
 html header .github-button {
@@ -88,3 +86,57 @@ html header .github-button .github_logo {
     margin-top: -3px;
 }
 /* 📜 Enf of Header's style 📜 */
+
+/* 📣 Content_page section's style : 📣 */
+html body .hero_components {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    height: 400px;
+}
+
+html body .hero_components .intro-text {
+    font-weight: 200;
+    font-size: 22px;
+}
+
+html body .hero_components #celcus {
+    font-size: 50px;
+    margin-bottom: 130px;
+    margin-top: -180px;
+    margin-left: 170px;
+    font-weight: 800;
+}
+
+html body .hero_components .localisation-indication-text, #city-name {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+html body .hero_components .localisation-indication-text .localisation_icon {
+    width: 30px;
+    margin-right: 3px;
+    margin-bottom: -9px;
+}
+
+html body .hero_components #city-name { font-style: italic; }
+html body .hero_components #date-text { text-transform: capitalize; }
+
+html body .hero_components #temp {
+    font-size: 180px;
+    font-weight: 800;
+    margin-left: -85px;
+}
+
+html body .hero_components #city-name .more-infos {
+    font-style: normal;
+    text-decoration: none;
+    color: blue;
+    font-weight: 400;
+}
+
+html body .hero_components .more-infos:hover {
+    transition: all 0.4s;
+    transform: scale(1.1);
+}
+/* 📣 End of Content_page section's style 📣 */

@@ -21,16 +21,19 @@
         <link rel="stylesheet" href="css/responsive_app.css">
     </head>
 
-    <!-- 📜 Simple Header with Logo and Github's View Button : 📜 -->
-    <header>
-        <img src="images_assets/logo.png" alt="app_logo" class="app_logo"/>
-        <div class="logo_info">Cloudy© 1.0 📦</div>
-        <a href="https://github.com/SkyX-ID-FR/Weather-API" target="_blank"><button class="github-button"><p>Check Github</p> <img src="https://camo.githubusercontent.com/fe3b97974431a5652f0572ef8dd3c46d206d0aeb9658c7dd1f9c766ed89e4215/68747470733a2f2f69636f6e2d6c6962726172792e636f6d2f696d616765732f6769746875622d69636f6e2d77686974652f6769746875622d69636f6e2d77686974652d362e6a7067" alt="github_logo" class="github_logo"/></button></a>
-    </header>
+    <body id="body">
+        <!-- 📜 Simple Header with Logo and Github's View Button : 📜 -->
+        <header>
+            <img src="images_assets/logo.png" alt="app_logo" class="app_logo"/>
+            <div class="logo_info">Cloudy© est une application web de météo complétement gratuite, fonctionnelle, open-source et complète !</div>
+            <a href="https://github.com/SkyX-ID-FR/Weather-API" target="_blank"><button class="github-button"><p>Check Github</p> <img src="https://camo.githubusercontent.com/fe3b97974431a5652f0572ef8dd3c46d206d0aeb9658c7dd1f9c766ed89e4215/68747470733a2f2f69636f6e2d6c6962726172792e636f6d2f696d616765732f6769746875622d69636f6e2d77686974652f6769746875622d69636f6e2d77686974652d362e6a7067" alt="github_logo" class="github_logo"/></button></a>
+        </header>
 
-    <body>
-        <section class="content_page">
-            <p>Helllo wordl !</p>
+        <section class="hero_components">
+            <h1 class="intro-text">Aujourd'hui <br/><p id="date-text"></p></h1>
+            <p id="temp"><p id="celcus">°c</p></p>
+
+            <p class="localisation-indication-text"><img class="localisation_icon" src="https://cdn4.iconfinder.com/data/icons/basic-flat-ui-extra-set-200-item/76/ui_ux_minimalist_button_location_mark_pin-21-512.png" alt="localisation_icon"/>Vous êtes localisé aux alentours de <p id="city-name"></p></p>
         </section>
     </body>
 
