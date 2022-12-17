@@ -9,12 +9,63 @@
 */
 
 /* 📌 Fonts Import with Google Fonts : 📌 */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html {
-    font-family: 'Montserrat Alternates', sans-serif;
-    color: white;
+    font-family: 'Montserrat', sans-serif;
     font-size: normal;
     font-weight: normal;
-    background-color: #000a0c;
 }
+
+html body .content_page p {
+    margin: 30px;
+}
+
+/* 📜 Header's style : 📜 */
+html header {
+    width: 100%;
+    height: 90px;
+
+    /* Coming soon background : */
+    box-shadow: 0px 0px 20px rgb(210, 210, 210);
+}
+
+html header .app_logo {
+    width: 55px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+html header .github-button {
+    width: 180px;
+    background: #0E7EEC;
+    padding: 5px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 23px;
+    float: right;
+    margin-right: 20px;
+}
+
+html header .github-button:hover, .app_logo:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+html header .github-button p {
+    float: left;
+    margin-left: 20px;
+    margin-top: 4px;
+    font-size: 15px;
+}
+
+html header .github-button .github_logo {
+    width: 27px;
+    float: right;
+    margin-right: 20px;
+    margin-top: -3px;
+}
+/* 📜 Enf of Header's style 📜 */

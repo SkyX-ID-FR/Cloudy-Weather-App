@@ -16,11 +16,11 @@ console.log("%c  Cloudy© is starting ! ✨  ", "border-radius: 10px; padding-to
 /* 🌐 Geolocation of web'client : 🌐 */
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (position) {
-        /* Définir la lattitude et la longitude : */
+        /* Set latitude and longitude : */
         var lat = position.coords.latitude;
         var lng = position.coords.longitude;
 
-        /* Requête avec ces paramêtres à l'API de gep.api.gouv.fr : */
+        /* Request with these parameters to the gep.api.gouv.fr API : */
         fetch(`https://geo.api.gouv.fr/communes?lat=${lat}&lon=${lng}`)
         .then(response => !response.ok ? Promise.reject() : response.json())
         .then(json => console.log("Votre ville actuelle 👉 " + json[0].nom))
