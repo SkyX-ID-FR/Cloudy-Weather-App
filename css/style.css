@@ -17,6 +17,11 @@ html {
     font-weight: normal;
 }
 
+body {
+    background-color: #13232e;
+    color: white;
+}
+
 /* 📜 Header's style : 📜 */
 html #header {
     width: 100%;
@@ -39,8 +44,7 @@ html #header .app_logo:hover ~ .logo_info {
 }
 
 html #header .logo_info {
-    box-shadow: 0px 0px 15px rgb(198, 198, 198);
-    background-color: white;
+    background-color: #173e56;
     position: absolute;
     margin-top: 80px;
     padding: 15px;
@@ -50,7 +54,7 @@ html #header .logo_info {
     font-weight: 200;
     opacity: 0;
     transition: all 0.5s;
-    color: black;
+    color: white;
     width: 300px;
 }
 
@@ -102,7 +106,7 @@ html body .hero_components .intro-text {
 
 html body .hero_components #celcus {
     font-size: 50px;
-    margin-bottom: 130px;
+    margin-bottom: 110px;
     margin-top: -180px;
     margin-left: 170px;
     font-weight: 800;
@@ -114,29 +118,56 @@ html body .hero_components .localisation-indication-text, #city-name {
 }
 
 html body .hero_components .localisation-indication-text .localisation_icon {
-    width: 30px;
-    margin-right: 3px;
-    margin-bottom: -9px;
+    width: 20px;
+    margin-left: -305px;
+    margin-bottom: -21px;
 }
 
-html body .hero_components #city-name { font-style: italic; }
 html body .hero_components #date-text { text-transform: capitalize; }
 
 html body .hero_components #temp {
     font-size: 180px;
     font-weight: 800;
-    margin-left: -85px;
+    margin-left: -10px;
 }
 
-html body .hero_components #city-name .more-infos {
+html body .hero_components .more-infos {
     font-style: normal;
     text-decoration: none;
-    color: blue;
+    color: #89ccf9;
     font-weight: 400;
 }
 
-html body .hero_components .more-infos:hover {
-    transition: all 0.4s;
-    transform: scale(1.1);
+html body .hero_components .more-infos .external-link-icon {
+    width: 13px;
 }
 /* 📣 End of Content_page section's style 📣 */
+
+/* 🔍 Loading wait function's style : 🔍 */
+html body #loader {
+    text-align: center;
+    margin-top: 15%;
+    margin-left: -3%;
+}
+
+html body #loader .loading_icon {
+    margin-bottom: -45px;
+    width: 30px;
+    margin-left: -70px;
+}
+
+html body #loader .logo_app { width: 100px; }
+html body #loader footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+html body #loader footer p {
+    font-size: 14px;
+}
+/* 🔍 End of Loading wait function's style 🔍 */

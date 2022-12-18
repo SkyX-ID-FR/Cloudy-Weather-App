@@ -22,12 +22,17 @@
     </head>
 
     <body>
-        <section id="loader">loader</section>
+        <section id="loader">
+            <img src="images_assets/logo.png" class="logo_app" alt="logo_app"/>
+            <img src="https://data.iodevy.cz/100151/web_templates/80/images/loading-gif.gif" class="loading_icon" alt="loading_icon"/>
+
+            <footer><p>Made with <font color="red">❤</font> by SkyX [ID FR]</p></footer>
+        </section>
 
         <!-- 📜 Simple Header with Logo and Github's View Button : 📜 -->
         <section id="header">
             <img src="images_assets/logo.png" alt="app_logo" class="app_logo"/>
-            <div class="logo_info">Cloudy© est une application web de météo complétement gratuite, fonctionnelle, open-source et complète !</div>
+            <div class="logo_info">Cloudy© est une application web de météo complétement gratuite, open-source et complète !</div>
             <a href="https://github.com/SkyX-ID-FR/Weather-API" target="_blank"><button class="github-button"><p>Check Github</p> <img src="https://camo.githubusercontent.com/fe3b97974431a5652f0572ef8dd3c46d206d0aeb9658c7dd1f9c766ed89e4215/68747470733a2f2f69636f6e2d6c6962726172792e636f6d2f696d616765732f6769746875622d69636f6e2d77686974652f6769746875622d69636f6e2d77686974652d362e6a7067" alt="github_logo" class="github_logo"/></button></a>
         </section>
 
@@ -35,9 +40,11 @@
             <h1 class="intro-text">Aujourd'hui <br/><p id="date-text"></p></h1>
             <p id="temp"><p id="celcus">°c</p></p>
 
-            <p class="localisation-indication-text"><img class="localisation_icon" src="https://cdn4.iconfinder.com/data/icons/basic-flat-ui-extra-set-200-item/76/ui_ux_minimalist_button_location_mark_pin-21-512.png" alt="localisation_icon"/>Vous êtes localisé aux alentours de <p id="city-name"></p></p>
+            <p class="localisation-indication-text"><img class="localisation_icon" src="https://www.aspa2.fr/wp-content/uploads/2017/11/icon-localisation-white.png" alt="localisation_icon"/><p id="city-name"></p></p>
+            <a href='https://developer.mozilla.org/fr/docs/Web/API/Geolocation_API' target='_blank' class='more-infos'>En savoir + sur ma géolocalisation <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/OOjs_UI_icon_external-link-ltr-invert.svg/2048px-OOjs_UI_icon_external-link-ltr-invert.svg.png" class="external-link-icon" alt="external-link-icon"/></a>
         </section>
     </body>
 
     <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </html>
