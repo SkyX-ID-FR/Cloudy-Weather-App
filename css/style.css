@@ -18,9 +18,31 @@ html {
 }
 
 body {
-    background-color: #13232e;
+    /* background-color: #13232e; */
+    /* 🔧 Default SVG Background : background-image: url('../images_assets/Cloudy.svg'); */
+    background-image: url('../images_assets/Snow.svg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: white;
 }
+
+html body #content_page {
+    /* ⌛ Apply blurred bacckground : backdrop-filter: blur(5px); */
+    backdrop-filter: blur(10px);
+    height: 100vh;
+}
+
+/* 🎨 Customize Scroll-Bar Naviguator : 🎨 */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background-color: #13232e; }
+
+::-webkit-scrollbar-thumb {
+    background-color: #1b3545;
+    border-radius: 10px;
+}
+/* 🎨 End of Customize Scroll-Bar Naviguator 🎨 */
 
 /* 📜 Header's style : 📜 */
 html #header {
@@ -60,7 +82,7 @@ html #header .logo_info {
 
 html #header .github-button {
     width: 180px;
-    background: #0E7EEC;
+    background-color: #0E7EEC;
     padding: 5px;
     height: 40px;
     border-radius: 20px;
@@ -119,7 +141,7 @@ html body .hero_components .localisation-indication-text, #city-name {
 
 html body .hero_components .localisation-indication-text .localisation_icon {
     width: 20px;
-    margin-left: -305px;
+    margin-left: -310px;
     margin-bottom: -21px;
 }
 
@@ -140,6 +162,35 @@ html body .hero_components .more-infos {
 
 html body .hero_components .more-infos .external-link-icon {
     width: 13px;
+}
+
+html body .hero_components .weathers-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+html body .hero_components .weathers-tags .items {
+    background-color: #0e82f3;
+    margin-left: 18px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100px;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+html body .hero_components .weathers-tags .items:hover {
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+
+html body .hero_components .weathers-tags .item-icons {
+    width: 18px;
+    margin-bottom: -4px;
+    margin-right: 5px;
 }
 /* 📣 End of Content_page section's style 📣 */
 
@@ -171,3 +222,19 @@ html body #loader footer p {
     font-size: 14px;
 }
 /* 🔍 End of Loading wait function's style 🔍 */
+
+/* 📅 Other days section's style : 📅 */
+table, td {
+    border: 1px solid white;
+}
+
+html body #other-hours {
+    margin-top: 40px;
+}
+
+html body #other-hours table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 📅 End of Other days section's style 📅 */
