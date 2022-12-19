@@ -20,7 +20,7 @@ document.getElementById("content_page").style.display = "none";
 setTimeout(function() {
     document.getElementById("loader").style.display = "none";
     $("#content_page").fadeIn("3000");
-}, 1500);
+}, 3500);
 /* 📣 End of Loading wait function 📣 */
 
 let date_format = new Date();
@@ -53,7 +53,7 @@ function show_forestcast_popup(id_obj) {
     setTimeout(function() {
         document.getElementById("popup_loader").style.display = "none";
         $("#infos").fadeIn("1000");
-    }, 1500);
+    }, 2000);
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
