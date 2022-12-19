@@ -20,18 +20,18 @@ html {
 body {
     /* background-color: #13232e; */
     /* 🔧 Default SVG Background : background-image: url('../images_assets/Cloudy.svg'); */
-    background-image: url('../images_assets/Snow.svg');
+    background-image: url('../images_assets/Cloudy.svg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     color: white;
+    scroll-behavior: smooth;
 }
 
 html body #content_page {
-    /* ⌛ Apply blurred bacckground : backdrop-filter: blur(5px); */
-    backdrop-filter: blur(10px);
-    height: 100vh;
+    /* backdrop-filter: blur(10px); */
+    height: 150vh;
 }
 
 /* 🎨 Customize Scroll-Bar Naviguator : 🎨 */
@@ -40,7 +40,7 @@ html body #content_page {
     height: 10px; 
 }
 
-::-webkit-scrollbar-track { background-color: #13232e; }
+::-webkit-scrollbar-track { background-color: transparent; }
 ::-webkit-scrollbar-thumb {
     background-color: #1b3545;
     border-radius: 10px;
@@ -133,7 +133,7 @@ html body .hero_components #celcus {
     font-size: 50px;
     margin-bottom: 110px;
     margin-top: -180px;
-    margin-left: 170px;
+    margin-left: 210px;
     font-weight: 800;
 }
 
@@ -178,7 +178,7 @@ html body .hero_components .weathers-tags .items {
     margin-left: 18px;
     margin-top: 20px;
     padding: 10px;
-    width: 100px;
+    width: 150px;
     padding-top: 7px;
     padding-bottom: 9px;
     border-radius: 10px;
@@ -228,9 +228,9 @@ html body #loader footer p {
 
 /* 📅 Other days section's style : 📅 */
 html body #forescast-hours {
-    margin-top: 50px;
     text-align: center;
     overflow-x: auto;
+    /* Responsive proprety => margin-top: 110px; */
 }
 
 html body #forescast-hours table {
@@ -251,30 +251,72 @@ html body #forescast-hours .forescat_info_item {
 }
 
 html body #forescast-hours .forescat_info_item:hover {
-    transition: all 0.3s;
+    transition: all 0.4s;
     transform: scale(1.1);
     cursor: pointer;
 }
 
 html body #forescast-hours .forescat_info_item img {
-    margin-top: -50px;
+    margin-top: -45px;
 }
 
 html body #forescast-hours .forescat_info_item .temp {
     font-weight: 200;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: -10px;
     margin-top: -25px;
 }
 
 html body #forescast-hours .forescat_info_item .celcus {
-    margin-top: -35px;
-    margin-left: 40px;
+    margin-top: -30px;
+    margin-left: 30px;
+    font-size: 15px;
 }
 
 html body #forescast-hours .daily-infos-text {
     margin-bottom: 0px;
     font-weight: 200;
     font-size: 14px;
+}
+
+html body #forescast-hours .forescast_popup {
+    background-color: rgba(0, 0, 0, 0.153);
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    bottom: 0;
+    position: fixed;
+}
+
+html body #forescast-hours .forescast_popup .content {
+    background-color: white;
+    bottom: 0;
+    position: fixed;
+    color: black;
+    text-align: start;
+    padding-left: 20px;
+    height: 200px;
+    padding-bottom: 50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html body #forescast-hours .forescast_popup .loader-img-popup {
+    width: 30px;
+    margin-left: 50%;
+    margin-top: 80px;
+}
+
+html body #forescast-hours .forescast_popup .content .nav-div {
+    width: 30%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(181, 181, 181);
+    min-height: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 /* 📅 End of Other days section's style 📅 */

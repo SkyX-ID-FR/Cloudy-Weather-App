@@ -19,13 +19,14 @@
         <!-- 📌 Link to CSS files : 📌 -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive_app.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
     </head>
 
     <body>
         <section id="loader">
             <img src="images_assets/logo.png" class="logo_app" alt="logo_app"/>
             <img src="https://data.iodevy.cz/100151/web_templates/80/images/loading-gif.gif" class="loading_icon" alt="loading_icon"/>
-
             <footer><p>Made with <font color="red">❤</font> by SkyX [ID FR]</p></footer>
         </section>
 
@@ -58,10 +59,23 @@
                         <tr id="forescat_info_inner"></tr>
                     </tbody>
                 </table>
+
+                <div class="forescast_popup" id="forescast_popup" onclick="hide_forestcast_popup()">
+                    <div class="content" id="content">
+                        <div class="nav-div"></div>
+
+                        <div id="popup_loader">
+                            <img src="https://data.iodevy.cz/100151/web_templates/80/images/loading-gif.gif" class="loader-img-popup" alt="loading_icon"/>
+                        </div>
+
+                        <div id="infos">
+                            <p id="popup_temp"></p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </body>
 
     <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </html>
