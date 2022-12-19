@@ -35,9 +35,12 @@ html body #content_page {
 }
 
 /* 🎨 Customize Scroll-Bar Naviguator : 🎨 */
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background-color: #13232e; }
+::-webkit-scrollbar { 
+    width: 10px; 
+    height: 10px; 
+}
 
+::-webkit-scrollbar-track { background-color: #13232e; }
 ::-webkit-scrollbar-thumb {
     background-color: #1b3545;
     border-radius: 10px;
@@ -224,17 +227,54 @@ html body #loader footer p {
 /* 🔍 End of Loading wait function's style 🔍 */
 
 /* 📅 Other days section's style : 📅 */
-table, td {
-    border: 1px solid white;
+html body #forescast-hours {
+    margin-top: 50px;
+    text-align: center;
+    overflow-x: auto;
 }
 
-html body #other-hours {
-    margin-top: 40px;
+html body #forescast-hours table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 40px 20px;
 }
 
-html body #other-hours table {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+html body #forescast-hours .forescat_info_item {
+    height: 150px;
+    width: 50px!important;
+    background: rgba(255, 255, 255, 0.092);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+html body #forescast-hours .forescat_info_item:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+html body #forescast-hours .forescat_info_item img {
+    margin-top: -50px;
+}
+
+html body #forescast-hours .forescat_info_item .temp {
+    font-weight: 200;
+    font-size: 30px;
+    margin-left: -10px;
+    margin-top: -25px;
+}
+
+html body #forescast-hours .forescat_info_item .celcus {
+    margin-top: -35px;
+    margin-left: 40px;
+}
+
+html body #forescast-hours .daily-infos-text {
+    margin-bottom: 0px;
+    font-weight: 200;
+    font-size: 14px;
 }
 /* 📅 End of Other days section's style 📅 */

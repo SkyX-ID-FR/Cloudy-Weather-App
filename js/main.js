@@ -27,19 +27,15 @@ let date_format = new Date();
 let actual_date = date_format.toLocaleString('fr-FR', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'});
 document.getElementById("date-text").innerHTML = actual_date;
 
-/* 🔗 Plan a few hours of weather (8) : 🔗 */
-var actuel_hours = date_format.getHours();
-function addHours(date_format, hours) {
-    date_format.setHours(date_format.getHours() + hours);
+/* 🔗 Plan a few hours of weather (10) : 🔗 */
+function addHoursToDate(hour){
+    date_format.setHours(date_format.getHours() + hour);
     return date_format;
 }
 
-for (var i = 1; i < 9; i++) {
-    var forescast_hours = actuel_hours + addHours(date_format, 1);
-    document.getElementById("hours").innerHTML += `
-        <td>
-            ${forescast_hours}
-        </td>
+for (var i = 1; i < 11; i++) {
+    document.getElementById("forescat_hours_inner").innerHTML += `
+        <td><p class="daily-infos-text">${addHoursToDate(1).getHours()}h</p></td>
     `;
 }
 
@@ -71,14 +67,11 @@ if (navigator.geolocation) {
         fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lng}&exclude={part}&appid=e83b3c4c08285bf87b99f9bbc0abe3f0`)
             .then((response) => {return response.json();})
             .then((data) => {
-                for (var i = 1; i < 9; i++) {
-                    document.getElementById("forescat").innerHTML += `
-                        <td>
-                            Temp : ${Math.round(data.hourly[i].temp - 273.15)} <br/>
-                            Humidité : ${data.hourly[i].humidity} <br/>
-                            Vent : ${data.hourly[i].wind_speed} <br/>
-                            Météo : ${data.hourly[i].weather[0].description} <br/><br/>
-                            <img src="http://openweathermap.org/img/wn/${data.hourly[i].weather[0].icon}@2x.png"/>
+                for (var i = 1; i < 11; i++) {
+                    document.getElementById("forescat_info_inner").innerHTML += `
+                        <td class="forescat_info_item">
+                            <img src="http://openweathermap.org/img/wn/${data.hourly[i].weather[0].icon}@2x.png"/><br/>
+                            <p class="temp">${Math.round(data.hourly[i].temp - 273.15)}<p class="celcus">°c</p></p>
                         </td>
                     `;             
                 }
