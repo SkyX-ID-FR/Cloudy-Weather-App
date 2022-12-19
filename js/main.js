@@ -20,7 +20,7 @@ document.getElementById("content_page").style.display = "none";
 setTimeout(function() {
     document.getElementById("loader").style.display = "none";
     $("#content_page").fadeIn("3000");
-}, 1000);
+}, 1500);
 /* 📣 End of Loading wait function 📣 */
 
 let date_format = new Date();
@@ -53,7 +53,7 @@ function show_forestcast_popup(id_obj) {
     setTimeout(function() {
         document.getElementById("popup_loader").style.display = "none";
         $("#infos").fadeIn("1000");
-    }, 1000);
+    }, 1500);
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
@@ -64,7 +64,27 @@ function show_forestcast_popup(id_obj) {
             .then((response) => {return response.json();})
             .then((data) => {
                 document.getElementById("popup_temp").innerHTML = `
-                    <p>${Math.round(data.hourly[id_final_obj].temp - 273.15)}</p>
+                    <div class="item-block">
+                        <div class="item">
+                            <p class="description">Température mésurée :</p>
+                            <p class="data">${Math.round(data.hourly[id_final_obj].temp - 273.15)}°c</p>
+                        </div>
+
+                        <div class="item">
+                            <p class="description">Température resentie :</p>
+                            <p class="data">${Math.round(data.hourly[id_final_obj].feels_like - 273.15)}°c</p>
+                        </div>
+
+                        <div class="item">
+                            <p class="description">Taux d'humidité :</p>
+                            <p class="data">${data.hourly[id_final_obj].humidity}%</p>
+                        </div>
+
+                        <div class="item">
+                            <p class="description">Vitesse du vent :</p>
+                            <p class="data">${data.hourly[id_final_obj].wind_speed}</p>
+                        </div>
+                    </div>
                 `;
             })
         }

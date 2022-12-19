@@ -19,14 +19,12 @@ html {
 
 body {
     /* background-color: #13232e; */
-    /* 🔧 Default SVG Background : background-image: url('../images_assets/Cloudy.svg'); */
     background-image: url('../images_assets/Cloudy.svg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     color: white;
-    scroll-behavior: smooth;
 }
 
 html body #content_page {
@@ -200,8 +198,9 @@ html body .hero_components .weathers-tags .item-icons {
 /* 🔍 Loading wait function's style : 🔍 */
 html body #loader {
     text-align: center;
-    margin-top: 15%;
-    margin-left: -3%;
+    padding-top: 15%;
+    width: 100%;
+    height: 100vh;
 }
 
 html body #loader .loading_icon {
@@ -210,7 +209,11 @@ html body #loader .loading_icon {
     margin-left: -70px;
 }
 
-html body #loader .logo_app { width: 100px; }
+html body #loader .logo_app { 
+    width: 100px; 
+    margin-left: -30px;
+}
+
 html body #loader footer {
     position: fixed;
     left: 0;
@@ -247,7 +250,7 @@ html body #forescast-hours .forescat_info_item {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 html body #forescast-hours .forescat_info_item:hover {
@@ -289,20 +292,6 @@ html body #forescast-hours .forescast_popup {
     position: fixed;
 }
 
-html body #forescast-hours .forescast_popup .content {
-    background-color: white;
-    bottom: 0;
-    position: fixed;
-    color: black;
-    text-align: start;
-    padding-left: 20px;
-    height: 200px;
-    padding-bottom: 50px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 html body #forescast-hours .forescast_popup .loader-img-popup {
     width: 30px;
     margin-left: 50%;
@@ -316,7 +305,46 @@ html body #forescast-hours .forescast_popup .content .nav-div {
     margin-right: auto;
     background-color: rgb(181, 181, 181);
     min-height: 6px;
-    margin-top: 10px;
+    margin-top: -10px;
     margin-bottom: 10px;
+}
+
+html body #forescast-hours .forescast_popup .content {
+    background-color: white;
+    bottom: 0;
+    position: fixed;
+    color: black;
+    text-align: start;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+html body #forescast-hours .forescast_popup .content .item-block {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+html body #forescast-hours .forescast_popup .content .item-block .item {
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+html body #forescast-hours .forescast_popup .content .item-block .item .description {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 11px;
+}
+
+html body #forescast-hours .forescast_popup .content .item-block .item .data {
+    font-size: 50px;
+    font-weight: 600;
 }
 /* 📅 End of Other days section's style 📅 */

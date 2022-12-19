@@ -13,3 +13,21 @@
     padding: 0;
     border: 0;   
 }
+
+@media only screen and (max-width: 633px) {
+    html body #forescast-hours table {
+        margin-top: 115px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    html body #forescast-hours .forescast_popup .content .item-block .item {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    html body #forescast-hours .forescast_popup .loader-img-popup {
+        margin-left: 46%;
+    }
+}
