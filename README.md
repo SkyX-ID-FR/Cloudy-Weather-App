@@ -12,3 +12,5 @@
   
 ✔ Des données fiables avec l'api de weather_open_map : https://openweathermap.org/api <br/>
 ✔ Une interface moderne avec un CSS background Glassmorphism : https://css.glass/
+
+<br/><br/><p align="center">⚠ En travaux pour le moment ⚠</p>
