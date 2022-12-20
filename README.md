@@ -13,7 +13,7 @@
 ✔ Des données fiables avec l'API de open_weather_map : https://openweathermap.org/api <br/>
 ✔ Une interface moderne avec un CSS background Glassmorphism : https://css.glass/ <br/><br/>
 
-<h1 align="center">Production & Mise en ligne ⚙</h1>
+<h1 align="center">Production & Mise en ligne : ⚙</h1>
 <p align="center">À ce jour l'application est disponible en mode production grâce à une plateforme intelligente que je conseille pour tout types de projet web : Vercel (https://vercel.com/). En partant du nom de votre projet et du code importé depuis votre repos Github, Vercel définit une URL personnalisée et héberge votre site web avec le protocole HTTPS. J'ai ducoup bien évidemment héberger Cloudy© sur cette dernière. <br/><br/>On peut y accèder via cette URL : https://cloudy-weather.vercel.app/</p><br/>
 
 <p align="center">
@@ -21,7 +21,7 @@
   <br/><br/><img src="https://zupimages.net/up/22/51/p0tr.png"/>
 </p>
 
-<h1 align="center">Vidéo YouTube 🎞</h1>
+<h1 align="center">Vidéo YouTube : 🎞</h1>
 <p align="center">
   Durant ces 48h de rush en intégrale, j'ai filmé et monté une petite vidéo retraçant le projet de A à Z de façon à montrer aux personnes qui le souhaitent comment le projet se structure. Si vous n'êtes pas très fan des vidéos, je mets ci-dessous le lien du wiki complet du projet. 😉<br/><br/>
   <a href="https://www.youtube.com/watch?v=Kb5AArAuhmQ" target="_blank"><img src="https://img.youtube.com/vi/Kb5AArAuhmQ/0.jpg"/></a>
