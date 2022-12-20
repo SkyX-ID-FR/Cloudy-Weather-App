@@ -20,7 +20,7 @@ document.getElementById("content_page").style.display = "none";
 setTimeout(function() {
     document.getElementById("loader").style.display = "none";
     $("#content_page").fadeIn("3000");
-}, 3500);
+}, 4500);
 /* 📣 End of Loading wait function 📣 */
 
 let date_format = new Date();
@@ -82,7 +82,7 @@ function show_forestcast_popup(id_obj) {
 
                         <div class="item">
                             <p class="description">Vitesse du vent :</p>
-                            <p class="data">${data.hourly[id_final_obj].wind_speed}</p>
+                            <p class="data">${data.hourly[id_final_obj].wind_speed} km/h</p>
                         </div>
                     </div>
                 `;
