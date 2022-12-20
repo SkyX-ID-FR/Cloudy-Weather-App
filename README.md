@@ -26,5 +26,4 @@
   Durant ces 48h de rush en intégrale, j'ai filmé et monté une petite vidéo retraçant le projet de A à Z de façon à montrer aux personnes qui le souhaitent comment le projet se structure. Si vous n'êtes pas très fan des vidéos, je mets ci-dessous le lien du wiki complet du projet. 😉<br/><br/>
   <a href="https://www.youtube.com/watch?v=Kb5AArAuhmQ" target="_blank"><img src="https://img.youtube.com/vi/Kb5AArAuhmQ/0.jpg"/></a>
 </p>
-
-<hr/><p align="center">Copyright&copy; 2022-23 - Cloudy&copy; ⛅</p>
+<p align="center">Copyright&copy; 2022-23 - Cloudy&copy; ⛅</p>
