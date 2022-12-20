@@ -25,6 +25,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     color: white;
+    scroll-behavior: smooth;
 }
 
 html body #content_page {
@@ -142,8 +143,9 @@ html body .hero_components .localisation-indication-text, #city-name {
 
 html body .hero_components .localisation-indication-text .localisation_icon {
     width: 20px;
-    margin-left: -310px;
+    margin-left: -193px;
     margin-bottom: -21px;
+    position: absolute;
 }
 
 html body .hero_components #date-text { text-transform: capitalize; }
@@ -357,3 +359,76 @@ html body #forescast-hours .forescast_popup .content .item-block .item .data {
     font-weight: 600;
 }
 /* 📅 End of Other days section's style 📅 */
+
+/* 🧑 Authors' style popup : 🧑 */
+html body #authors-infos {
+    background: rgba(67, 67, 67, 0.285);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    width: 60%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    height: 240px;
+    -webkit-transition: all 0.5s ease; 
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease; 
+    transition: all 0.5s ease;
+}
+
+html body #authors-infos:hover {
+    -webkit-transform:scale(1.1); 
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1); 
+    transform:scale(1.1);
+}
+
+html body #authors-infos .author_img {
+    width: 70px;
+    border-radius: 50%;
+    float: left;
+}
+
+html body #authors-infos .description {
+    font-size: 15px;
+    color: rgb(212, 212, 212);
+    margin-bottom: 25px;
+}
+
+html body #authors-infos .user-github-info {
+    margin-left: 20px;
+    float: left;
+}
+
+html body #authors-infos #link {
+    color: white!important;
+    text-decoration: none;
+}
+
+html body #authors-infos .user-github-info h2 {
+    font-size: 14px;
+    color: rgb(212, 212, 212);
+    font-weight: 300;
+}
+
+html body #authors-infos .github-profile-description {
+    margin-left: 10px;
+    float: left;
+}
+
+html body #authors-infos .github-profile-description .description-link {
+    color: rgb(212, 212, 212);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+html body #authors-infos .github-profile-description .description-link .arrow-icon {
+    width: 35px;
+    transform: rotate(-90deg);
+    margin-bottom: -13px;
+    margin-left: -10px;
+}
+/* 🧑 End of Authors' style popup 🧑 */

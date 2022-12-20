@@ -31,3 +31,65 @@
         margin-left: 46%;
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    html body #authors-infos {
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    html body #authors-infos {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 722px) {
+    html body #authors-infos {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 542px) {
+    html body #authors-infos {
+        height: 400px;
+    }
+
+    html body #authors-infos .author_img {
+        float: none;
+        margin-left: 39%;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    html body #authors-infos {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 442px) {
+    html body #authors-infos {
+        height: 500px;
+    }
+
+    html body #content_page {
+        height: 240vh;
+    }
+
+    html body #authors-infos .user-github-info {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 421px) {
+    html body #authors-infos {
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 343px) {
+    html body #authors-infos {
+        height: 600px;
+    }
+}
