@@ -35,7 +35,7 @@ html body #content_page {
 /* 🎨 Customize Scroll-Bar Naviguator : 🎨 */
 ::-webkit-scrollbar { 
     width: 10px; 
-    height: 10px; 
+    height: 7px; 
 }
 
 ::-webkit-scrollbar-track { background-color: transparent; }
@@ -237,20 +237,23 @@ html body #forescast-hours {
 }
 
 html body #forescast-hours table {
-    width: 100%;
+    width: 60%;
     border-collapse: separate;
-    border-spacing: 40px 20px;
+    border-spacing: 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
 }
 
 html body #forescast-hours .forescat_info_item {
-    height: 150px;
+    height: 180px;
     width: 50px!important;
     background: rgba(255, 255, 255, 0.092);
-    border-radius: 16px;
+    border-radius: 45px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
 }
 
 html body #forescast-hours .forescat_info_item:hover {
@@ -276,10 +279,16 @@ html body #forescast-hours .forescat_info_item .celcus {
     font-size: 15px;
 }
 
-html body #forescast-hours .daily-infos-text {
+html body #forescast-hours .hours-infos-text {
     margin-bottom: 0px;
-    font-weight: 200;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+html body #forescast-hours .hours-times-info {
     font-size: 14px;
+    font-weight: 200;
+    color: grey;
 }
 
 html body #forescast-hours .forescast_popup {

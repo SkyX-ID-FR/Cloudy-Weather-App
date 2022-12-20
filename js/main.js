@@ -17,10 +17,11 @@ console.log("%c  Cloudy© is starting ! ✨  ", "border-radius: 10px; padding-to
 document.getElementById("loader").style.display = "block";
 document.getElementById("content_page").style.display = "none";
 
-setTimeout(function() {
+setTimeout(function(){
     document.getElementById("loader").style.display = "none";
     $("#content_page").fadeIn("3000");
-}, 4500);
+}, 50);
+/* 5000 for the timeout loading's function ! */
 /* 📣 End of Loading wait function 📣 */
 
 let date_format = new Date();
@@ -35,7 +36,10 @@ function addHoursToDate(hour){
 
 for (var i = 1; i < 11; i++) {
     document.getElementById("forescat_hours_inner").innerHTML += `
-        <td><p class="daily-infos-text">${addHoursToDate(1).getHours()}h</p></td>
+        <td>
+            <p class="hours-infos-text">${addHoursToDate(1).getHours()}h</p>
+            <p class="hours-times-info">dans ${i} heure(s)</p>
+        </td>
     `;
 }
 
@@ -53,7 +57,7 @@ function show_forestcast_popup(id_obj) {
     setTimeout(function() {
         document.getElementById("popup_loader").style.display = "none";
         $("#infos").fadeIn("1000");
-    }, 2000);
+    }, 2500);
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
