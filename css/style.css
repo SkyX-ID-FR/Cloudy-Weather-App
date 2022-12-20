@@ -141,15 +141,7 @@ html body .hero_components .localisation-indication-text, #city-name {
     font-size: 14px;
 }
 
-html body .hero_components .localisation-indication-text .localisation_icon {
-    width: 20px;
-    margin-left: -193px;
-    margin-bottom: -21px;
-    position: absolute;
-}
-
 html body .hero_components #date-text { text-transform: capitalize; }
-
 html body .hero_components #temp {
     font-size: 180px;
     font-weight: 800;
