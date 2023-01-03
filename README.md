@@ -21,9 +21,4 @@
   <br/><br/><img src="https://zupimages.net/up/22/51/p0tr.png"/>
 </p>
 
-<h1 align="center">Vidéo YouTube : 🎞</h1>
-<p align="center">
-  Durant ces 48h de rush en intégrale, j'ai filmé et monté une petite vidéo retraçant le projet de A à Z de façon à montrer aux personnes qui le souhaitent comment le projet se structure. 😉<br/><br/>
-  <a href="https://www.youtube.com/watch?v=Kb5AArAuhmQ" target="_blank"><img src="https://img.youtube.com/vi/Kb5AArAuhmQ/0.jpg"/></a>
-</p>
 <p align="center">Copyright&copy; 2022-23 - Cloudy&copy; ⛅</p>
