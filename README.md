@@ -17,8 +17,8 @@
 <p align="center">À ce jour l'application est disponible en mode production grâce à une plateforme intelligente que je conseille pour tout types de projet web : Vercel (https://vercel.com/). En partant du nom de votre projet et du code importé depuis votre repos Github, Vercel définit une URL personnalisée et héberge votre site web avec le protocole HTTPS. J'ai ducoup bien évidemment héberger Cloudy© sur cette dernière. <br/><br/>On peut y accèder via cette URL : https://cloudy-weather.vercel.app/</p><br/>
 
 <p align="center">
-  <img src="https://zupimages.net/up/22/51/0p8b.png"/>
-  <br/><br/><img src="https://zupimages.net/up/22/51/p0tr.png"/>
+  <img src="https://zupimages.net/up/22/51/tm21.png"/>
+  <br/><br/><img src="https://zupimages.net/up/23/01/g967.png"/>
 </p>
 
 <p align="center">Copyright&copy; 2022-23 - Cloudy&copy; ⛅</p>
